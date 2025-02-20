@@ -29,24 +29,24 @@
   </div>
 </nav>
 
-<ListView :blog="blog[0]"></ListView>
+<router-view :blog="blog_data"></router-view>
+
+<!-- <ListView :blog="blog[0]"></ListView>
 <ListView :blog="blog[1]"></ListView>
-<ListView :blog="blog[2]"></ListView>
+<ListView :blog="blog[2]"></ListView> -->
 </template>
 
 <script>
-import data from "./assets/data.js"
-import ListView from './components/ListView.vue';
+import data from "./assets/data.js";
 
 export default {
   name : 'App',
   data() {
     return {
-      blog : data
+      blog_data : data
     }
   },
   components : {
-    ListView : ListView
   }
 }
 </script>

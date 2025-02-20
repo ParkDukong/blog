@@ -1,7 +1,7 @@
 <template>
     <div class="container mt-4">
-        <h5>{{ blog.title }}</h5>
-        <p>블로그 글 날짜</p>
+        <h5>{{ blog[0].title }}</h5>
+        <p>{{ blog[0].content }}</p>
     </div>
 </template>
 
